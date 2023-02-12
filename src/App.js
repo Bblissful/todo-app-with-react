@@ -3,23 +3,36 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <><body>
+      <header>
+      <h1> MY TODO LIST</h1>
+      <form id="new-task-form">
+        <input
+         type="text" 
+         id="new-task-input" 
+         placeholder="Create a plan"/>
+        <input
+         type="submit" 
+         id="new-task-submit"
+          value="Add task"/>
+      </form>
+    </header>
+    
+    <main>
+        <section class="task-list"> 
+        <h2>Tasks</h2>
+
+        <div id="tasks">
+        
+        
+      </div>
+      </section>
+      </main>
+      
+      </body></>
+    
   );
 }
+
 
 export default App;
